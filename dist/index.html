@@ -16,9 +16,7 @@
         <button class="ingredientButton" onclick=getRecipes()> Search! </button>
     </header>
 
-    <div class="container">
-
-    </div>
+    <div class="container"></div>
 
 
 
@@ -26,10 +24,14 @@
     <script id="recipes-template" type="text/x-handlebars-template">
         {{#each recipes}}
         <div class="recipe">
-        <a href={{href}}>{{title}}</a>
+        <a href={{href}} target="_blank">{{title}}</a>
         <img src={{thumbnail}}>
         <ul>
-        {{ingredients}}
+            {{#each ingredients}}
+            <li>
+        {{this}}
+            </li>
+            {{/each}}
         </ul>
          </div>
         {{/each}}
