@@ -19,9 +19,10 @@ header {
     background-color: antiquewhite;
     border: 2px solid black;
     border-radius: 15%;
-    background-color: #DCD9D4; 
- background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
- background-blend-mode: soft-light,screen;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 div img {
@@ -29,3 +30,15 @@ div img {
     height: 100px;
 }
 
+button{
+    background-color: aqua;
+    height: 50px;
+}
+input {
+    width: 250px;
+    height: 50px;
+}
+
+.recipe img {
+    border-radius: 50%;
+}

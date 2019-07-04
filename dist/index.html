@@ -13,16 +13,19 @@
 <body>
     <header>
         <div class="gif">
-            <img src="https://media0.giphy.com/media/dyib5dPRLW0GR56tAJ/giphy.gif?cid=790b76115d1dccbd7451307667402c13&rid=giphy.gif">
+            <img src="https://media3.giphy.com/media/5UJnsXkJCjVocz2yp1/giphy.gif?cid=790b76115d1dd059766d4d434974948e&rid=giphy.gif">
         </div>
         <div class="content">
-        <input type="text" class="ingredientInput" placeholder="what ingredient would you like to check?">
+        <input type="text" class="ingredientInput" placeholder="what ingredient would you like to search?">
         <button class="ingredientButton" onclick=getRecipes()> Search! </button>
     </div>
         <div class="gif">
-                <img src="https://media0.giphy.com/media/dyib5dPRLW0GR56tAJ/giphy.gif?cid=790b76115d1dccbd7451307667402c13&rid=giphy.gif">
+                <img src="https://media3.giphy.com/media/5UJnsXkJCjVocz2yp1/giphy.gif?cid=790b76115d1dd059766d4d434974948e&rid=giphy.gif">
         </div>
     </header>
+
+    <hr>
+    <hr>
 
     <div class="container"></div>
 
@@ -32,8 +35,9 @@
     <script id="recipes-template" type="text/x-handlebars-template">
         {{#each recipes}}
         <div class="recipe">
+            <img src={{thumbnail}}>
+            <br>
         <a href={{href}} target="_blank">{{title}}</a>
-        <img src={{thumbnail}}>
         <ul>
             {{#each ingredients}}
             <li class="list-item">
