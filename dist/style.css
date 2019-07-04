@@ -1,3 +1,13 @@
+body{
+    background-image: url("https://images.pexels.com/photos/1056563/pexels-photo-1056563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")}
+
+header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -9,9 +19,13 @@
     background-color: antiquewhite;
     border: 2px solid black;
     border-radius: 15%;
+    background-color: #DCD9D4; 
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen;
 }
 
 div img {
     width: 100px;
     height: 100px;
 }
+

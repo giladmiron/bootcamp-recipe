@@ -12,8 +12,16 @@
 
 <body>
     <header>
+        <div class="gif">
+            <img src="https://media0.giphy.com/media/dyib5dPRLW0GR56tAJ/giphy.gif?cid=790b76115d1dccbd7451307667402c13&rid=giphy.gif">
+        </div>
+        <div class="content">
         <input type="text" class="ingredientInput" placeholder="what ingredient would you like to check?">
         <button class="ingredientButton" onclick=getRecipes()> Search! </button>
+    </div>
+        <div class="gif">
+                <img src="https://media0.giphy.com/media/dyib5dPRLW0GR56tAJ/giphy.gif?cid=790b76115d1dccbd7451307667402c13&rid=giphy.gif">
+        </div>
     </header>
 
     <div class="container"></div>
@@ -28,7 +36,7 @@
         <img src={{thumbnail}}>
         <ul>
             {{#each ingredients}}
-            <li>
+            <li class="list-item">
         {{this}}
             </li>
             {{/each}}
