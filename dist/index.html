@@ -8,16 +8,40 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-
-
 </head>
 
 <body>
+    <header>
+        <input type="text" class="ingredientInput" placeholder="what ingredient would you like to check?">
+        <button class="ingredientButton" onclick=getRecipes()> Search! </button>
+    </header>
+
+    <div class="container">
+
+    </div>
+
+
+
+
+    <script id="recipes-template" type="text/x-handlebars-template">
+        {{#each recipes}}
+        <div class="recipe">
+        <a href={{href}}>{{title}}</a>
+        <img src={{thumbnail}}>
+        <ul>
+        {{ingredients}}
+        </ul>
+         </div>
+        {{/each}}
+        </script>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>
+    <script src="renderer.js"></script>
     <script src="main.js"></script>
 </body>
 

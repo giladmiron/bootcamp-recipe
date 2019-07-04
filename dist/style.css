@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+}
+
+.recipe {
+    width: 30vw;
+    background-color: antiquewhite;
+}
+
+div img {
+    width: 100px;
+    height: 100px;
+}
