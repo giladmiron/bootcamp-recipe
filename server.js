@@ -3,12 +3,19 @@ const app = express()
 const path = require( 'path' )
 const request = require( 'request' )
 
-app.use( express.static( path.join( __dirname, 'public' ) ) )
+app.use( express.static( path.join( __dirname, 'dist' ) ) )
 
 app.get('/sanity', function(req,res){
 res.send("OK")
 }) 
 
+app.get('/recipes/:ingredient', function(req,res){
+    let ingredient = req.params.ingredient
+    request.get(`https://recipes-goodness.herokuapp.com/recipes/${ingredient}`,function(error,response){
+        let recipes = JSON.parse(response.body).results
+        res.send(recipes)
+    }) 
+}) 
 
 
 
